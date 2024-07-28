@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>drop down</title>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <body>
+        <header>
+            <div class="header-content">
+                <h1>Gyan jyoti Shikha Niketan</h1>
+                <div class="line"></div>
+                <h2>Chhotki Amwan</h2>
+                <a href="#" class="ctn">learn more</a>
+            </div>
+        </header>
+       
+        <div class="menu-bar">
+            <ul>
+            
+                <li class="active"><a href="#"><i class="fa-solid fa-house"></i>home</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i>teacher</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="shnny mehta.html">director:-mr Sunny mehta</a></li>
+                        <li><a href="MY RESUME.HTML">Anish mukharjee</a></li>
+                        <li><a href="#">Rohit kumar</a></li>
+                        <li><a href="sintu.html">Sintu kumar</a></li>
+                        <li><a href="Bittu.html">Bittu kumar</a></li>
+                        <li><a href="#">Rakhi miss</a></li>
+                        <li><a href="surbhi.html">Surbhi miss</a></li>
+                        <li><a href="rohit kumar.html">Rohit kumar</a></li>
+                        <li><a href="pratima.html">pratima mam</a></li>
+                        <li><a href="#">Dharamveer kumar</a></li>
+                        <li><a href="#">Anurag kumar</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-clone"></i>facilities</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">playground</a></li>
+                            <li><a href="#">lab</a></li>
+                            <li><a href="#">computer lab</a></li>
+                            <li><a href="#">moral values</a></li>
+                            <li><a href="#">library</a></li>
+                            <li><a href="#">smart class</a></li>
+                            <li><a href="#">best for english</a></li>
+                            <li><a href="#">wahicle(totd)</a></li>
+                            <li><a href="#">bsthroom & toilet</a></li>
+                            <li><a href="#">good management</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-users"></i>gallery</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">events</a></li>
+                            <li><a href="#">playground</a></li>
+                            <li><a href="#">school</a></li>
+                            <li><a href="#">game</a></li>
+                            <li><a href="#">teachers</a></li>
+                            <li><a href="#">lab</a></li>
+                            <li><a href="#">project</a></li>
+                            <li><a href="#">technology</a></li>
+                            <li><a href="#">program</a></li>
+                            <li><a href="#">meetings</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i>contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-edit"></i>about me</a></li>
+            </ul>
+        </div>
+    
+       <!--hh-->
+    
+
+
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide"><img src="schoolka.jpg" alt="schoolka.jpg"></div>
+        <div class="slide"><img src="schoolll.jpg" alt="schoolll.jpg"></div>
+        <div class="slide"><img src="schoool.jpg" alt=" schoool.jpg"></div>
+        <!-- Add more slides as needed -->
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+    <div class="next" onclick="plusSlides(1)">&#10095;</div>
+</div>
+
+<script>
+    let currentSlide = 0;
+
+    function showSlide(n) {
+        const slides = document.querySelector('.slides');
+        const slideWidth = document.querySelector('.slide').clientWidth;
+        currentSlide = (n + slides.childElementCount) % slides.childElementCount;
+        slides.style.transform = 'translateX(' + -currentSlide * slideWidth + 'px)';
+    }
+
+    function plusSlides(n) {
+        showSlide(currentSlide + n);}
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .slider {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Navigation buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+
+    
+
+    </body>
+</html> 
